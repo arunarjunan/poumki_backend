@@ -88,6 +88,11 @@ app.get("/delete", async (req, res) => {
     res.send({ url });
   });
 
+  app.get("/test", async (req, res) => {
+    const url = await generateUploadURL();
+    res.status(200).send("Server working :");
+  });
+
 server.listen(3001, () => {
   console.log("Server runnning on port 3001...");
 });
