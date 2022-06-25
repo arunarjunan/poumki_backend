@@ -89,7 +89,6 @@ app.get("/delete", async (req, res) => {
   });
 
   app.get("/test", async (req, res) => {
-    const url = await generateUploadURL();
     res.status(200).send("Server working :");
   });
 
