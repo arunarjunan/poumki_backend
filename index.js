@@ -21,9 +21,13 @@ const io = new Server(server, {
     origin: "http://arunarjunan.co.in",
     methods: ["GET", "POST"],
   },
+  transports:['websocket', 'htmlfile', 'xhr-multipart', 'xhr-polling']
 });
 
+
+
 io.on("connection", (socket) => {
+
   console.log(`User connected ${socket.id}`);
   socketConnect = socket
 });
