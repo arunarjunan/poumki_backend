@@ -5,9 +5,9 @@ const randomBytes = promisify(crypto.randomBytes);
 
 
 const region = "eu-central-1";
-const bucketName = "poumki-images";
-const accessKeyId = "AKIASQI2FAVD46UH43OQ";
-const secretAccessKey = "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";
+const bucketName = "images";
+const accessKeyId = "XXXXX";
+const secretAccessKey = "XXXXXXXXXXXXXXXX";
 
 const s3 = new aws.S3({
   region,
